@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinityverse Subscription</title>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/abasalom');
+
+
+        body {
+            background-image: url(infinityverse.png);
+        }
+
+        .plan {
+            border: 2px solid #ccc;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            margin: 20px;
+            display: inline-block;
+            vertical-align: top;
+            font-family: 'Abasalom', sans-serif;
+
+        }
+
+
+        .plan.premium {
+            border-color: #ff9800;
+            font-family: 'Abasalom', sans-serif;
+
+        }
+
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 10px 0;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Abasalom', sans-serif;
+
+        }
+
+
+        h1 {
+            text-align: center;
+            font-family: 'Abasalom', sans-serif;
+            color: aliceblue;
+
+        }
+
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            font-family: 'Abasalom', sans-serif;
+
+        }
+
+
+        .plan.basic {
+            border-color: #2196F3;
+        }
+    </style>
+
+    <script>
+        var titles = ["Go Pro | Infinityverse", "Go Amazing | Infinityverse", "Unlock All | Infinityverse", "Go Insane | Infinityverse"];
+        var index = 0;
+
+        function changeTitle() {
+            document.title = titles[index];
+            index = (index + 1) % titles.length;
+        }
+
+        setInterval(changeTitle, 2000);
+
+    </script>
+</head>
+
+<body>
+    <h1>Subscription Plans</h1>
+    <div class="plan">
+        <h2>Free Plan</h2>
+        <ul>
+            <li>Get limited Scripts</li>
+            <li>Unlimited Usage Limit</li>
+            <li>Free Helpline</li>
+            <li></li>
+        </ul>
+        <a href="4.html"><button class="button">Select</button></a>
+    </div>
+    <div class="plan basic">
+        <h2>Basic Plan</h2>
+        <ul>
+            <li>Access to all codes and scripts</li>
+            <li>Upload Data</li>
+            <li>Premium support</li>
+        </ul>
+        <button class="button">Select</button>
+    </div>
+    <div class="plan premium">
+        <h2>Premium Plan</h2>
+        <ul>
+            <li>Access to all codes and scripts</li>
+            <li>Unlimited user accounts</li>
+            <li>Premium support</li>
+            <li>Priority access to new releases</li>
+        </ul>
+        <button class="button">Select</button>
+    </div>
+</body>
+
+</html>
